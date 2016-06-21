@@ -1,0 +1,28 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+#container {
+    position: relative;
+    display: inline-block;
+}
+#currencyInputField{
+    text-align: right;
+    width: 150px;
+    height: 30px;
+    outline: 0;
+}
+#click {
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: lightgrey;
+    opacity: 0.5;
+}

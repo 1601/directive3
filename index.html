@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="directiveTest" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Add</title>
+    <link href="stylesheet/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheet/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" ng-controller="AddController">
+
+        <div class="page-header">Test Add</div>
+        Value 1:  <currency ng-model="num1"></currency>
+        <!--Value 1: <input ng-model="num1.currency" type="text"/>-->
+        <br>+<br>
+        Value 2: <currency ng-model="num2"></currency> <button ng-click="add()">Add</button>
+        <hr>
+        Result : <currency ng-model="result"></currency>
+        <br>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<script src="scripts/jquery-3.0.0.min.js"></script>
+<script src="scripts/angular.min.js"></script>
+<script src="javascript/app.js"></script>
+<script src="javascript/addController.js"></script>
+</html>
